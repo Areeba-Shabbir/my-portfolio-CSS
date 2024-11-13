@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Image from 'next/image'; // Import Image from next/image
 
 const Footer = () => {
   return (
@@ -15,7 +16,13 @@ const Footer = () => {
           <FaLinkedinIn />
         </a>
         <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="icon">
-          <img src="https://vercel.com/favicon.ico" alt="Vercel" style={{ width: "24px", height: "24px" }} />
+          {/* Use Next.js Image component for optimization */}
+          <Image 
+            src="https://vercel.com/favicon.ico" 
+            alt="Vercel" 
+            width={24} 
+            height={24} 
+          />
         </a>
       </div>
     </footer>

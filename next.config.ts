@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['vercel.com'], // Allow images from vercel.com
+  },
 };
 
 export default nextConfig;
